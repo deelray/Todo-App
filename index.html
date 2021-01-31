@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Todos</title>
+		<link rel="stylesheet" href="main.css">
+    <script src="app.js" defer></script>
+	</head>
+	<body>
+
+		<section class="todoapp">
+			<header class="header">
+				<h1>todos</h1>
+				<input class="new-todo" placeholder="What needs to be done?">
+      </header>
+
+			<section class="main">
+        <span class="toggle-all-container">
+          <input id="toggle-all" class="toggle-all" type="checkbox">
+          <label for="toggle-all">Mark all as complete</label>
+        </span>
+
+				<ul class="todo-list">
+          <li class="todo-item completed">
+            <input id="todo-1" class="toggle" type="checkbox" checked>
+            <label for="todo-1">Eat</label>
+            <button class="destroy"></button>
+          </li>
+
+          <li class="todo-item completed">
+            <input id="todo-2" class="toggle" type="checkbox" checked>
+            <label for="todo-2">Sleep</label>
+            <button class="destroy"></button>
+          </li>
+
+          <li class="todo-item">
+            <input id="todo-3" class="toggle" type="checkbox">
+            <label for="todo-3">Feed cat</label>
+            <button class="destroy"></button>
+          </li>
+        </ul>
+      </section>
+
+			<footer class="footer">
+				<span class="todo-count">
+          1 item left
+        </span>
+
+				<ul class="filters">
+					<li>
+						<a href="#/" class="selected" data-filter="all">All</a>
+					</li>
+					<li>
+						<a href="#/active" data-filter="active">Active</a>
+					</li>
+					<li>
+						<a href="#/completed" data-filter="completed">Completed</a>
+					</li>
+        </ul>
+
+				<button class="clear-completed">
+          Clear completed
+        </button>
+			</footer>
+		</section>
+
+	</body>
+</html>
